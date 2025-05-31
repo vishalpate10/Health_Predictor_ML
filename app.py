@@ -22,7 +22,7 @@ st.markdown(
         background-image: url('https://cdn.pixabay.com/photo/2022/10/09/12/03/athletes-7508975_1280.jpg');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        color: black;
     }
     </style>
     """,
