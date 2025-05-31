@@ -14,7 +14,7 @@ def decode_label(pred):
     else:
         return "Underweight"
 
-# Inject background CSS (no f-string, no indentation inside string)
+# Background image without color property
 st.markdown(
     """
     <style>
@@ -22,7 +22,6 @@ st.markdown(
         background-image: url('https://cdn.pixabay.com/photo/2022/10/09/12/03/athletes-7508975_1280.jpg');
         background-size: cover;
         background-position: center;
-        color: black;
     }
     </style>
     """,
