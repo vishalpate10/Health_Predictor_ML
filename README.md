@@ -1,4 +1,4 @@
-# Health_Predictor_ML
+# Health_Predictor
 App Link:- https://healthpredictorml-byvishal.streamlit.app/
 
 📊 Purpose: Predict if a person is Underweight, Healthy, or Fat using height and weight.
@@ -11,16 +11,11 @@ App Link:- https://healthpredictorml-byvishal.streamlit.app/
 
 🔮 Output: Shows health status with clear color-coded messages.
 
+
 🧠Technologies Used:-
-
 Python — programming language.
-
 Streamlit — framework to build the interactive web app.
-
 Pandas — data handling.
-
 Scikit-learn — machine learning model training and prediction.
-
 Pickle — saving/loading the ML model.
-
 HTML/CSS — for background image styling and UI enhancements.
