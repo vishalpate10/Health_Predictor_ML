@@ -19,7 +19,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://media.istockphoto.com/id/2209737125/photo/muscular-woman-doing-hard-training-with-personal-trainer-at-the-gym.jpg?s=1024x1024&w=is&k=20&c=CaJf_3uvl3ecqWAbDelValeYqVGizQboiiKDHJpBkbk=');
+        background-image: url('https://cdn.pixabay.com/photo/2023/04/05/20/38/cross-fit-7902273_1280.jpg');
         background-size: cover;
         background-position: center;
     }
