@@ -3,7 +3,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import base64
 
 # Load the saved model
 with open("HealthPredictor.pkl", "rb") as f:
@@ -18,22 +17,15 @@ def decode_label(pred):
     else:
         return "Underweight"
 
-# Encode image to base64
-def get_base64_of_bin_file(file_path):
-    with open(file_path, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-# Set background image using base64 encoding
-img_path = "pic.png"  # Path to the uploaded image
-base64_img = get_base64_of_bin_file(https://cdn.pixabay.com/photo/2022/10/09/12/03/athletes-7508975_1280.jpg)
+# Set background image directly from URL
 st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("data:image/png;base64,{base64_img}");
+        background-image: url("https://cdn.pixabay.com/photo/2022/10/09/12/03/athletes-7508975_1280.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         color: black;
     }}
     </style>
@@ -66,4 +58,3 @@ if st.button("Predict"):
 st.markdown("------------")
 st.markdown("<div style='text-align: right;'><h4 style='color: white;'>Developed by: Vishal Pate</h4>", unsafe_allow_html=True)
 st.markdown("<div style='text-align: right;'><h4 style='color: white;'>Email: vprakashpate@gmail.com</h4>", unsafe_allow_html=True)
-
