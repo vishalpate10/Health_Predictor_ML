@@ -19,7 +19,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://cdn.pixabay.com/photo/2023/04/05/20/38/cross-fit-7902273_1280.jpg');
+        background-image: url('https://www.byoprotein.com/wp-content/uploads/2018/01/fitness-man-desktop-wallpaper-51316-53014-hd-wallpapers.jpg');
         background-size: cover;
         background-position: center;
     }
