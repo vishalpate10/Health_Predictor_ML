@@ -1,4 +1,3 @@
-# Import required libraries
 import streamlit as st
 import pandas as pd
 import pickle
@@ -16,7 +15,7 @@ def decode_label(pred):
     else:
         return "Underweight"
 
-# Set background image directly from URL (without color property)
+# Background image CSS (no color property)
 st.markdown(
     """
     <style>
@@ -31,15 +30,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# App title and subtitle
+# App title and description
 st.title("💪 Health Status Predictor")
 st.markdown("Predict whether a person is **Underweight**, **Healthy**, or **Fat** based on height and weight using ML.")
 
-# User input sliders
+# User input
 height = st.slider("📏 Height (cm)", 140, 200, 170)
 weight = st.slider("⚖️ Weight (kg)", 30, 150, 70)
 
-# Prediction button
+# Predict button
 if st.button("Predict"):
     input_data = pd.DataFrame({'Height_cm': [height], 'Weight_kg': [weight]})
     prediction = model.predict(input_data)
@@ -52,7 +51,7 @@ if st.button("Predict"):
     else:
         st.markdown("<h3 style='color: blue;'>🔵 The person is predicted to be: Underweight</h3>", unsafe_allow_html=True)
 
-# Footer with white text and right alignment
+# Footer
 st.markdown("------------")
 st.markdown("<div style='text-align: right;'><h4 style='color: white;'>Developed by: Vishal Pate</h4></div>", unsafe_allow_html=True)
 st.markdown("<div style='text-align: right;'><h4 style='color: white;'>Email: vprakashpate@gmail.com</h4></div>", unsafe_allow_html=True)
