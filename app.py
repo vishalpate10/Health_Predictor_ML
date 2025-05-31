@@ -3,12 +3,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import base64
 
 # Load the saved model
 with open("HealthPredictor.pkl", "rb") as f:
     model = pickle.load(f)
 
-# Label encoder (manual for 3-class output)
+# Label decoder function
 def decode_label(pred):
     if pred == 0:
         return "Fat"
@@ -17,22 +18,30 @@ def decode_label(pred):
     else:
         return "Underweight"
 
-# Set HD health background
+# Encode image to base64
+def get_base64_of_bin_file(file_path):
+    with open(file_path, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# Set background image using base64 encoding
+img_path = "pic.png"  # Path to the uploaded image
+base64_img = get_base64_of_bin_file(img_path)
 st.markdown(
-    """
+    f"""
     <style>
-    .stApp {
-        background-image: url('pic.png');
+    .stApp {{
+        background-image: url("data:image/png;base64,{base64_img}");
         background-size: cover;
         background-position: center;
         color: black;
-    }
+    }}
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Title
+# App title and subtitle
 st.title("💪 Health Status Predictor")
 st.markdown("Predict whether a person is **Underweight**, **Healthy**, or **Fat** based on height and weight using ML.")
 
