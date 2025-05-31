@@ -5,17 +5,17 @@ App Link:- https://healthpredictorml-byvishal.streamlit.app/
 
 🧠 Powered by: Machine Learning model trained on health data.
 
-🖥️ Built with: Python and Streamlit for easy web app interface.
-
 📏⚖️ Inputs: User enters height (cm) and weight (kg) using sliders.
 
 🔮 Output: Shows health status with clear color-coded messages.
 
+🖥️ Built with:
+Python and Streamlit for easy web app interface.
 
-🧠Technologies Used:-
-Python — programming language.
-Streamlit — framework to build the interactive web app.
-Pandas — data handling.
-Scikit-learn — machine learning model training and prediction.
-Pickle — saving/loading the ML model.
-HTML/CSS — for background image styling and UI enhancements.
+Pandas for data handling.
+
+Scikit-learn for machine learning model training and prediction.
+
+Pickle for saving/loading the ML model.
+
+HTML/CSS or background image styling and UI enhancements.
