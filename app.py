@@ -26,7 +26,7 @@ def get_base64_of_bin_file(file_path):
 
 # Set background image using base64 encoding
 img_path = "pic.png"  # Path to the uploaded image
-base64_img = get_base64_of_bin_file(pic.png)
+base64_img = get_base64_of_bin_file(Health_Predictor_ML/pic.png)
 st.markdown(
     f"""
     <style>
