@@ -28,7 +28,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("💪 BMI (Body Mass Index) Status Predictor")
+st.title("💪 BMI (Body Mass Index) Status")
 st.markdown("Predict whether a person is **Underweight**, **Healthy**, or **Fat** based on height and weight using ML.")
 
 height = st.slider("📏 Height (cm)", 140, 200, 170)
