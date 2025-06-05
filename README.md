@@ -1,5 +1,5 @@
 # BMI (Body Mass Index) Cheaker
-App Link:- https://healthpredictorml-byvishal.streamlit.app/
+App Link:-https://healthpredictorml-by-vishal.streamlit.app/
 
 📊 Purpose: Predict if a person is Underweight, Healthy, or Fat using height and weight.
 
